@@ -15,12 +15,15 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
+        <script src="https://kit.fontawesome.com/cee075af48.js" crossorigin="anonymous"></script>   
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -32,17 +35,20 @@
     <title>Aurora {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="main-header  container-fluid fixed-top">
         <div class="row">
-            <div class="col-12 col-lg-4 my-auto text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="header-title"><strong>Aurora</strong></h2>
+            <div class="col-lg-4 nav">
+
+            </div>
+            <div class="col-4 col-lg-4 my-auto text-center ">
+                <a href="{% url 'home' %}" class="nav-link header-title grey-text">
+                    <h2 class=""><strong>Aurora</strong></h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto" >
+            <div class="col-4 col-lg-2 my-auto" >
                 <form method="GET" action="">
-                    <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                    <div class="input-group">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -53,13 +59,12 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto ">
+            <div class="col-4 col-lg-2 my-auto ">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
+                        <a class=" nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center grey-text">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -76,7 +81,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="fas fa-shopping-bag fa-lg nav-link" href=""></a>
+                        <a class="fas fa-shopping-bag fa-lg nav-link grey-text" href=""></a>
                     </li>
                 </ul>
             </div>
