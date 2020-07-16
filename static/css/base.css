@@ -1,4 +1,4 @@
-
+/**************************************Landing page*/
 
 html {
     height: 100%;
@@ -20,6 +20,17 @@ html {
     font-family: 'Dancing Script', cursive;
 }
 
+.nav-link {
+    padding: 0;
+    padding-right: .5rem;
+
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+    
+
+}
 .grey-text {
     color: #5d5b6a;
 }
@@ -28,6 +39,7 @@ html {
     padding-top: 20%;
     padding-left: 15%;
     color: white;
+    
 }
 
 .banner-text{
@@ -40,3 +52,4 @@ html {
     text-align: center;
 
 }
+
