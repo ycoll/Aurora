@@ -41,23 +41,47 @@
         <div class="row">
 
         <!-- Navbar-->
-            <div class=" col-2  nav">
+            <div class=" col-2 col-md-4  nav">
              <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav w-auto mx-auto">
+                        <li class="nav-item dropdown">
+                            <a class="font-weight-bold nav-link" href="#" id="Jewellery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jewellery
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="Jewellery-link">
+                                <a href="" class="dropdown-item">Rings</a>
+                                <a href="" class="dropdown-item ">Necklaces</a>
+                                <a href="" class="dropdown-item ">Earrings</a>
+                                <a href="" class="dropdown-item">All Products</a>
+                                <a href="" class="dropdown-item">Special Offers</a>
+                            </div>
+                        </li>
+                         <li class="nav-item ">
+                            <a class="font-weight-bold nav-link" href="#"  >
+                                About
+                            </a>
+                        </li>
+                         <li class="nav-item ">
+                            <a class="font-weight-bold nav-link" href="#"  >
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
              </nav>
             </div>
         <!--///-->
-            
-            <div class="col-4 col-lg-4 my-auto text-center ">
-                <a href="{% url 'home' %}" class="nav-link header-title grey-text">
-                    <h2 class=""><strong>Aurora</strong></h2>
+            <div class="col-4  ">
+                <a href="{% url 'home' %}" class="nav-link ">
+                    <h2 class="header-title grey-text"><strong>Aurora</strong></h2>
                 </a>
             </div>
             <!--Medium size and up search bar-->
-            <div class="d-none d-md-block col-md-4 my-auto" >
+            <div class="d-none d-md-block col-md-2 my-auto" >
                 <form method="GET" action="">
                     <div class="input-group">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
@@ -97,7 +121,8 @@
                             </form>
                         </div>
                     </li>
-                    <!---->    
+                    <!----> 
+                    <!--User account-->   
                     <li class="list-inline-item dropdown">
                         <a class=" nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center grey-text">
@@ -117,9 +142,12 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!---->
+                    <!--Shopping bag-->
                     <li class="list-inline-item">
                         <a class="fas fa-shopping-bag fa-lg nav-link grey-text" href=""></a>
                     </li>
+                    <!---->
                 </ul>
             </div>
         </div>
