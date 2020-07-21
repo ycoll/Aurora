@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "products.category", "fields": {"name": "natural_beauty", "friendly_name": "Natural beauty"}}, {"pk": 2, "model": "products.category", "fields": {"name": "crystals", "friendly_name": "Crystals"}}, {"pk": 3, "model": "products.category", "fields": {"name": "statues", "friendly_name": "Statues"}}]

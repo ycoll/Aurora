@@ -5,10 +5,11 @@ html {
 }
 
 .img1 {
-    background: url('/media/home_background.jpg') no-repeat center center fixed;
+    background: url('/media/home_background_3.jpg') no-repeat center center fixed;
     background-size: cover;
     min-width: 100vw;
-    min-height: 100vh
+    min-height: 100vh;
+    
 
 }
 
@@ -18,6 +19,7 @@ html {
 
 .header-title {
     font-family: 'Dancing Script', cursive;
+    padding-top: 5px;
 }
 
 .nav-link {
@@ -38,12 +40,13 @@ html {
 .banner{
     padding-top: 20%;
     padding-left: 15%;
-    color: white;
+   
     
 }
 
 .banner-text{
     padding-bottom: 5%;
+    
 
 }
 
