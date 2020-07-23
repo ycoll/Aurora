@@ -81,9 +81,9 @@
             </div>
             <!--Medium size and up search bar-->
             <div class="d-none d-md-block col-md-2 my-auto" >
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                        <input class="form-control border border-black rounded-0" type="text" name="s" placeholder="Search">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -106,9 +106,9 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="mobile-search">
-                            <form class="form" method="GET" action="">
+                            <form class="form" method="GET" action="{% url 'products' %}">
                                 <div class="input-group ">
-                                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                                    <input class="form-control border border-black rounded-0" type="text" name="s" placeholder="Search">
                                     <div class="input-group-append">
                                         <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                                             <span class="icon">
