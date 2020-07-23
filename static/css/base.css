@@ -1,5 +1,5 @@
 /**************************************Landing page*/
-
+body,
 html {
     height: 100%;
 }
@@ -56,3 +56,24 @@ html {
 
 }
 
+/********************************Products Page*/
+.product-page{
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+    position: fixed;
+    z-index: -1;
+    background: lightgrey;
+}
+
+.sub-heading{
+    padding-top: 7%;
+    padding-bottom: 2%;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.card-container{
+   padding-bottom: 1.5%;
+}
